@@ -1,10 +1,17 @@
+import math
+import os
+
 def main():
     #escribe tu código abajo de esta línea
-    nombre=input("Dame tu nombre: ")
-    apellido_paterno =input("Dame tu apellido paterno: ")
-    apellido_materno =input("Dame tu apellido materno: ")
-    nombre_completo =nombre + " " + apellido_paterno + " " + apellido_materno
-    print("Es un gusto conocerte " + nombre_completo)
+
+    os.system('clear')
+    lado=int(input("Dame el valor del lado del cuadrado: "))
+
+    perimetro = 4 * lado
+    area = math.pow(lado,2)
+
+    print("El perimetro del cuadrado de lado " + str(lado) + " es: " + str(perimetro))
+    print(f"El area del cuadrado de lado {lado} es: {area}")
 
 if __name__=='__main__':
     main()
